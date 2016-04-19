@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+var democase = require('..');
+
+democase.load('.').then(function (demoSet) {
+  demoSet.serve();
+});

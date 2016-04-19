@@ -12,6 +12,9 @@
     "dist"
   ],
   "main": "dist/index.js",
+  "bin": {
+    "democase": "lib/cli"
+  },
   "keywords": [],
   "repository": "https://github.com/lyweiwei/democase.git",
   "devDependencies": {
@@ -32,5 +35,13 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.3.5",
+    "express": "^4.13.4",
+    "lodash": "^4.11.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.14.1"
+  }
 }
