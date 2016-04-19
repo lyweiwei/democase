@@ -16,7 +16,10 @@
     "jade": "^1.11.0",
     "jade-loader": "^0.8.0",
     "jquery": "^2.2.3",
+    "mocha": "^2.4.5",
     "underscore": "^1.8.3",
+    "wdio-mocha-framework": "^0.2.12",
+    "webdriverio": "^4.0.5",
     "webpack": "^1.13.0"
   }
 }
