@@ -66,9 +66,16 @@ gulp.task('babel', ['clean'], function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('clean', function () {
-  return del('dist');
+gulp.task('copy:template', [], function () {
+  return gulp.src('template/**/*.jade')
+    .pipe(gulp.dest('dist'));
 });
 
-gulp.task('prepublish', ['nsp', 'babel']);
+gulp.task('copy', ['copy:template']);
+
+gulp.task('clean', function () {
+  return del('dist/template');
+});
+
+gulp.task('prepublish', ['nsp', 'babel', 'copy']);
 gulp.task('default', ['static', 'test', 'coveralls']);
