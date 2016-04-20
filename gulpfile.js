@@ -67,7 +67,7 @@ gulp.task('babel', ['clean'], function () {
 
 gulp.task('copy:template', [], function () {
   return gulp.src('template/**/*.jade')
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('template'));
 });
 
 gulp.task('copy', ['copy:template']);
