@@ -1,7 +1,6 @@
 var path = require('path');
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
-var excludeGitignore = require('gulp-exclude-gitignore');
 var mocha = require('gulp-mocha');
 var istanbul = require('gulp-istanbul');
 var nsp = require('gulp-nsp');
@@ -10,14 +9,14 @@ var coveralls = require('gulp-coveralls');
 var babel = require('gulp-babel');
 var del = require('del');
 var isparta = require('isparta');
+// var print = require('gulp-print');
 
 // Initialize the babel transpiler so ES2015 files gets compiled
 // when they're loaded
 require('babel-core/register');
 
 gulp.task('static', function () {
-  return gulp.src('**/*.js')
-    .pipe(excludeGitignore())
+  return gulp.src(['lib/**/*.js', 'test/**/*.js'])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());

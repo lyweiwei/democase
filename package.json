@@ -29,6 +29,7 @@
     "gulp-mocha": "^2.0.0",
     "gulp-nsp": "^2.1.0",
     "gulp-plumber": "^1.0.0",
+    "gulp-print": "^2.0.1",
     "isparta": "^3.0.3",
     "wdio-mocha-framework": "^0.2.12"
   },

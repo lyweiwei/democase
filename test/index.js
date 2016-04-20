@@ -1,8 +1,8 @@
 import assert from 'assert';
-import democase from '../lib';
+import { load } from '../lib';
 
-describe('democase', function () {
-  it('should be defined', function () {
-    assert(democase);
+describe('load', function () {
+  it('should be a function', function () {
+    assert(load instanceof Function);
   });
 });
