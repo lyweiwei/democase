@@ -13,7 +13,7 @@
   ],
   "main": "dist/index.js",
   "bin": {
-    "democase": "lib/cli"
+    "democase": "./dist/cli.js"
   },
   "keywords": [],
   "repository": "https://github.com/lyweiwei/democase.git",
@@ -42,7 +42,6 @@
     "bluebird": "^3.3.5",
     "express": "^4.13.4",
     "lodash": "^4.11.1",
-    "webdriverio": "^4.0.5",
     "webpack": "^1.13.0",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^1.14.1"
