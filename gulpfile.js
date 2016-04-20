@@ -66,8 +66,8 @@ gulp.task('babel', ['clean'], function () {
 });
 
 gulp.task('copy:template', [], function () {
-  return gulp.src('template/**/*.jade')
-    .pipe(gulp.dest('template'));
+  return gulp.src('lib/**/*.jade')
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('copy', ['copy:template']);
